@@ -12,7 +12,7 @@ class FileForm(forms.ModelForm):
         super(FileForm, self).__init__(*args, **kwargs)
         # Agrega la clase de Bootstrap 'form-control' a cada campo
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'form-control'
+            field.widget.attrs['class'] = 'form-control form-control-sm'
         
         # Agrega placeholders específicos a los campos
         self.fields['nombre'].widget.attrs['placeholder'] = 'Nombre: '

@@ -30,7 +30,7 @@
                             <form id="uploadForm" method="post" enctype="multipart/form-data">
                                 {% csrf_token %}
                                 <div class="form-inline">
-                                    <div class="form-group m-1">
+                                    <div class="form-group ml-3">
                                         {{ form.nombre }}
 
                                     </div>
@@ -40,7 +40,8 @@
 
                                     </div>
 
-                                    <button type="submit" class="btn btn-success " id="js-upload-submit">Upload</button>
+                                    <button type="submit" class="btn btn-success btn-sm "
+                                        id="js-upload-submit">Upload</button>
                                 </div>
                             </form>
                         </div>
